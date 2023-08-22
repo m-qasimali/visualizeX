@@ -1,7 +1,10 @@
 import { useTheme } from '@emotion/react';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
-import { default as ChevronLeftIcon, default as ChevronRightIcon } from '@mui/icons-material/ChevronRight';
+import {
+  default as ChevronLeftIcon,
+  default as ChevronRightIcon,
+} from '@mui/icons-material/ChevronRight';
 import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -97,11 +100,7 @@ const Sidebar = ({ isToggle, setIsToggle }) => {
               alignItems={'center'}
               justifyContent={'center'}
             >
-              <img
-                style={{ width: '100px' }}
-                src='public/images/user.png'
-                alt=''
-              />
+              <img style={{ width: '100px' }} src='images/user.png' alt='' />
               <Box textAlign='center'>
                 <Typography
                   variant='h2'

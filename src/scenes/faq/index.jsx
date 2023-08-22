@@ -1,3 +1,4 @@
+import { useTheme } from '@emotion/react';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import { Box } from '@mui/material';
 import MuiAccordion from '@mui/material/Accordion';
@@ -8,7 +9,6 @@ import { styled } from '@mui/material/styles';
 import React, { useState } from 'react';
 import Header from '../../components/Header';
 import { colorTokens } from '../../theme';
-import { useTheme } from '@emotion/react';
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />

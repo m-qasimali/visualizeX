@@ -17,7 +17,7 @@ const Bar = () => {
           sx={{
             width: '100%',
             mt: 3,
-            height: '88%'
+            height: '88%',
           }}
         >
           <ReBarChart />

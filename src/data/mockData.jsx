@@ -1,8 +1,8 @@
-import { colorTokens } from "../theme";
 import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import TrafficIcon from "@mui/icons-material/Traffic";
+import { colorTokens } from "../theme";
 
 const colors = colorTokens("dark");
 

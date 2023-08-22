@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { PieChart, ResponsiveContainer, Pie, Sector, Cell } from 'recharts';
-import { mockPieData } from '../data/mockData';
 import { Box, useMediaQuery, useTheme } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import { Cell, Pie, PieChart, ResponsiveContainer, Sector } from 'recharts';
+import { mockPieData } from '../data/mockData';
 import { colorTokens } from '../theme';
 
 const data = mockPieData;

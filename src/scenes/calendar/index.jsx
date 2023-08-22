@@ -1,25 +1,24 @@
+import { useTheme } from '@emotion/react';
+import { formatDate } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import listPlugin from '@fullcalendar/list';
+import FullCalendar from '@fullcalendar/react';
+import timeGridPlugin from '@fullcalendar/timegrid';
 import {
   Box,
   Grid,
-  Stack,
-  colors,
-  Typography,
   List,
   ListItem,
   ListItemText,
-  useMediaQuery,
+  Stack,
+  Typography,
+  useMediaQuery
 } from '@mui/material';
-import React, { useState } from 'react';
-import Header from './../../components/Header';
-import FullCalendar from '@fullcalendar/react';
-import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import timeGridPlugin from '@fullcalendar/timegrid';
-import listPlugin from '@fullcalendar/list';
 import { useConfirm } from 'material-ui-confirm';
-import { useTheme } from '@emotion/react';
+import React, { useState } from 'react';
 import { colorTokens } from '../../theme';
-import { formatDate } from '@fullcalendar/core';
+import Header from './../../components/Header';
 
 const initialEvents = [
   { id: 1, title: 'event 1', start: '2023-08-09' },
@@ -116,7 +115,11 @@ const Calendar = () => {
                         primary={event.title}
                         secondary={
                           <>
-                            <Typography variant='body1' color='inherit'>
+                            <Typography
+                              component={'span'}
+                              variant='body1'
+                              color='inherit'
+                            >
                               {formatDate(event.start, {
                                 year: 'numeric',
                                 month: 'short',

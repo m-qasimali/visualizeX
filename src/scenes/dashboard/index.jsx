@@ -1,21 +1,21 @@
+import { DownloadOutlined } from '@mui/icons-material';
 import {
   Box,
-  Stack,
   Button,
-  useTheme,
-  Hidden,
   Grid,
+  Hidden,
+  Stack,
   Typography,
+  useTheme,
 } from '@mui/material';
 import React from 'react';
 import Header from '../../components/Header';
-import { colorTokens } from '../../theme';
-import { DownloadOutlined } from '@mui/icons-material';
-import { mockStatsData, mockTransactions } from '../../data/mockData';
 import ProgressCircle from '../../components/ProgressCircle';
-import ReLineChart from './../../components/ReLineChart';
+import { mockStatsData, mockTransactions } from '../../data/mockData';
+import { colorTokens } from '../../theme';
 import ReBarChart from './../../components/ReBarChart';
 import ReGeographyChart from './../../components/ReGeographyChart';
+import ReLineChart from './../../components/ReLineChart';
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -151,13 +151,14 @@ const Dashboard = () => {
                   sx={{ overflowY: 'scroll' }}
                   spacing={1}
                 >
-                  {transactions.map((transaction) => (
+                  {transactions.map((transaction,index) => (
                     <Stack
                       direction={'row'}
                       alignItems={'center'}
                       justifyContent={'space-between'}
                       backgroundColor={colors.primary[400]}
                       p={1}
+                      key={index}
                     >
                       <Stack spacing={0.35}>
                         <Typography

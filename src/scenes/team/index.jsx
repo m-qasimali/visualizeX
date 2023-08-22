@@ -1,14 +1,14 @@
-import { Box, Stack, Typography, useMediaQuery } from '@mui/material';
-import React from 'react';
-import Header from '../../components/Header';
-import { DataGrid } from '@mui/x-data-grid';
-import { mockDataTeam } from '../../data/mockData';
+import { useTheme } from '@emotion/react';
 import {
   AdminPanelSettingsOutlined,
   LockOpenOutlined,
   SecurityOutlined,
 } from '@mui/icons-material';
-import { useTheme } from '@emotion/react';
+import { Box, Stack, Typography, useMediaQuery } from '@mui/material';
+import { DataGrid } from '@mui/x-data-grid';
+import React from 'react';
+import Header from '../../components/Header';
+import { mockDataTeam } from '../../data/mockData';
 import { colorTokens } from '../../theme';
 
 const Team = () => {

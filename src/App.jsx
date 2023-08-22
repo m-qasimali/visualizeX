@@ -2,6 +2,7 @@ import { CssBaseline, ThemeProvider } from '@mui/material';
 import { ConfirmProvider } from 'material-ui-confirm';
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import PageNotFound from './components/PageNotFound.jsx';
 import Home from './scenes/Home.jsx';
 import Bar from './scenes/bar/index.jsx';
 import Calendar from './scenes/calendar/index.jsx';
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
         element: <Calendar />,
       },
     ],
+  },
+  {
+    path: '*',
+    element: <PageNotFound />,
   },
 ]);
 

@@ -1,11 +1,17 @@
 import { Stack } from '@mui/material';
 import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
 import Sidebar from './global/Sidebar';
 import Topbar from './global/Topbar';
 
 const Home = () => {
   const [isToggle, setIsToggle] = useState(false);
+
+  const { pathname } = useLocation();
+
+  if (pathname == '/') {
+    return <Navigate to='dashboard' />;
+  }
 
   return (
     <>

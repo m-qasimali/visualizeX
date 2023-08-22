@@ -1,14 +1,9 @@
-import { Box, Stack, Typography, useMediaQuery } from '@mui/material';
+import { useTheme } from '@emotion/react';
+import { Box, Stack, useMediaQuery } from '@mui/material';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import React from 'react';
 import Header from '../../components/Header';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { mockDataContacts } from '../../data/mockData';
-import {
-  AdminPanelSettingsOutlined,
-  LockOpenOutlined,
-  SecurityOutlined,
-} from '@mui/icons-material';
-import { useTheme } from '@emotion/react';
 import { colorTokens } from '../../theme';
 
 const Contacts = () => {

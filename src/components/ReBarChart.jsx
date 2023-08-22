@@ -1,18 +1,17 @@
+import { useTheme } from '@mui/material';
 import React from 'react';
-import { mockBarData } from '../data/mockData';
 import {
   Bar,
   BarChart,
-  CartesianAxis,
   CartesianGrid,
   Label,
   Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis,
+  YAxis
 } from 'recharts';
-import { Box, useTheme } from '@mui/material';
+import { mockBarData } from '../data/mockData';
 import { colorTokens } from '../theme';
 
 const ReBarChart = ({ isDashboard = false }) => {
